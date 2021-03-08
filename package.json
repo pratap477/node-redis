@@ -1,9 +1,14 @@
 {
+    "name": "Node with redis example",
     "dependencies": {
         "express": "*",
         "redis": "*"
     },
+    "devDependencies": {
+        "standard": "*"
+    },
     "scripts": {
-        "start": "node index.js"
+        "start": "node index.js",
+        "lint": "standard"
     }
 }
