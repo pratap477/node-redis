@@ -1,0 +1,14 @@
+version: '3'
+services: 
+  redis-server:
+    image: redis
+    ports: 
+      - 6379:6379
+  node-kub:
+    restart: always
+    build: .
+    ports: 
+      - 8080:8080
+
+
+
